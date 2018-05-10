@@ -1,6 +1,6 @@
 ---
 title: "Wellbeing Assessment Report"
-author: "Juniata College"
+author: "John Carroll University"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   word_document:
@@ -44,31 +44,36 @@ read_chunk('charts_and_tables_wb_report.R')
 
 
 #How to Read this Document
-This document summarizes your school's data from the Spring 2018 Wake Forest University Wellbeing Assessment.  
+  This document summarizes your school's data from the Spring 2018 Wake Forest University Wellbeing Assessment.  
 
 ##Navigating your report
-The report is broken down according to sections of the Wellbeing Assessment, which are organized in alphabetical order with the following exception:  Additional Items, Custom Items, and Demographics appear at the end of the document.
+  The report is broken down according to sections of the Wellbeing Assessment, which are organized in alphabetical order with the following exception: Demographics, Additional Items, and Custom Items.  These appear at the end of the report.
+  
+  **_The table of contents can be used to navigate from section to section_**. Simply *Ctrl + click* on the section heading in the table of contents to move to that section. The footer of each page contains a hyperlink that says "Click here to return to table of contents". If you open the footer, you can *Ctrl + click* on that link to navigate back to the table of contents.
 
-**_The table of contents can be used to navigate from section to section_**.  Simply Ctrl + click on the section heading in the table of contents to move to that section.
-
-The footer of each page contains a hyperlink that says "Click here to return to table of contents".  If you open the footer, you can Ctrl + click on that link to navigate back to the table of contents.
+###Additional Items and Custom Items
+  Each school had the opportunity to select up to two sets of Additional Items from the following: Campus Safety, Medical Care, Mental Health Care, and Money.  Each school also had the opportunity to add up to 3 custom items.  If you opted to include Additional Items and/or Custom Items in your survey, they will appear at the end of your report (after the demographics) and will be indicated by section headings _Additional Items_ and _Custom Items_.
 
 ##Reading your report
-The data is summarized using **charts** and **tables**, which provide information on the number and proportion of students who responded in a given way to each item.  (Some items do not have a chart because the data was best represented in a table or some other form.) 
+  The data is summarized using **charts** and **tables**, which provide information on the number and proportion of students who responded in a given way to each item. Some items do not have a chart because the data was best represented in a table or some other form.  Below is more information on how to read the charts and tables. 
 
+#####break
 ###Charts
-You will see a bar chart for each item. Each bar represents the percentage of students at your school who endorsed a particular response option for that item. The bold black lines represent the percentage of students in the aggregated sample of all schools who endorsed a particular response. The item text is at the top of the chart and the response options are indicated along the bottom of the chart.
 
-```{r, echo=FALSE, warning=FALSE, message=FALSE}
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.height= 2.75, fig.width= 4}
 knitr::include_graphics('How to chart 2018.jpg')
-```
+```  
+  
+  Each bar on the bar chart represents the percentage of students at your school who endorsed a particular response option for the given item. The bold black lines represent the percentage of students in the aggregated sample of all schools who endorsed a particular response. The item text is at the top of the chart and the response options are indicated along the bottom of the chart. Charts for Additional Items and Custom items do not include aggregate data.
 
+#####break
 ###Tables
-Following the bar chart is frequency table for each item. There are two sets of 3 columns.  The left-hand columns labeled _"School"_ represent students at your school, and the right-hand columns labeled _"Ag"_ represent students from the aggregate sample of all schools.  The _"Freq"_ column indicates the raw number of students who endorsed each response option.  The _%_ column indicates the proportion of students who endorsed each response option, including those who did not provide a response (indicated in the table as _NA's_).  The _Valid %_ column indicates the proportion of students who endorsed each response option, not including those who did not provide a response.  __The _Valid %_ provides the most useful interpretation of the data and is identical to the percentage indicated in the bar chart__.
 
-```{r, echo=FALSE, warning=FALSE, message=FALSE}
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.height=2.5, fig.width=5}
 knitr::include_graphics('How to table 2018.jpg')
 ```
+
+Following the bar chart is frequency table for each item. There are two sets of 3 columns.  The left-hand columns labeled _School_ represent students at your school, and the right-hand columns labeled _Ag_ represent students from the aggregate sample of all schools.  The _Freq_ column indicates the raw number of students who endorsed each response option.  The _%_ column indicates the proportion of students who endorsed each response option, including those who did not provide a response (indicated in the table as _NA's_).  The _Valid %_ column indicates the proportion of students who endorsed each response option, not including those who did not provide a response.  __The _Valid %_ provides the most useful interpretation of the data and is identical to the percentage indicated in the bar chart__. For items with no chart, the item text is indicated at the top of the table. Tables for Additional and Custom items do not include aggregate data.
 
 #Summary Statistics
 ##Your School
@@ -79,7 +84,7 @@ knitr::include_graphics('How to table 2018.jpg')
     + Male = `r maleschool`%
     + Other = `r otherschool`%
 * Class standing:
-    + First year or freshman = `r schfreshvalid`% First year or freshman
+    + First year or freshman = `r schfreshvalid`%
     + Sophomore = `r schsophvalid`% 
     + Junior = `r schjunvalid`% 
     + Senior = `r schsenvalid`% 
@@ -373,8 +378,8 @@ _Please rate how strongly you agree or disagree with the following statements._
 ####BELONG_1
 
 ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-cbelong_11
-tbelong_11
+cbelong_1
+tbelong_1
 ```
 
 ####BELONG_2
@@ -433,6 +438,7 @@ cbelong_9
 tbelong_9
 ```
 
+#####break
 ###Experiences of discrimination
 _This set of items asks you about your discrimination experiences at your school_
 
@@ -466,6 +472,8 @@ tbdisc_3
 tbdisc_4
 ```
 
+
+#####break
 ####BDISC_5
 *Political beliefs*
 
@@ -1407,34 +1415,300 @@ cvolunt_8
 tvolunt_8
 ```
 
-#Additional Items
-<!--#Additional Items -->
-##Campus Safety
-**Prompt:** Please rate how strongly you agree or disagree with the following statements.
+#Demographics and background
 
-####Camp_Safe_Camp_Safe_1
+##Age, Class
+####AGE
+
+* Mean (School) = `r meanage`
+* Mean (Aggregate) = `r meanage_ag`
+
+####CLASS
 ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-csafe_1_noag
-tsafe_1_noag
+cclass
+tclass
 ```
 
-####Camp_Safe_Camp_Safe_2
+#####break
+##Disability
+_Do you have any of the following disabilities or medical conditions? (answer each item)_
+
+####DISABL_1
+*Learning disability (dyslexia, etc.)*
 ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-csafe_2_noag
-tsafe_2_noag
+tdisabl_1
 ```
 
-####Camp_Safe_Camp_Safe_3
+####DISABL_2
+*Attention-deficit/hyperactivity disorder (ADHD)*
 ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-csafe_3_noag
-tsafe_3_noag
+tdisabl_2
 ```
+
+####DISABL_3
+*Physical disability (speech, sight, mobility, hearing, etc.)*
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tdisabl_3
+```
+
+####DISABL_4
+*Chronic illness (cancer, diabetes, autoimmune disorders, etc.)*
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tdisabl_4
+```
+
+#####break
+####DISABL_5
+*Psychological disorder (depression, etc.)*
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tdisabl_5
+```
+
+####DISABL_6
+*Other*
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tdisabl_6
+```
+
+#####break
+##Foreign school, Gender, GPA, Housing
+
+####FRNSCHL
+
+_How many years of schooling before college have you received outside of the United States?_
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tfrn
+```
+
+#####break
+####GENDER
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+cgender
+tgender
+```
+
+####TRANS
+*Are you transgender?*
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+ttrans
+```
+
+####GPA
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+chsgpa
+thsgpa
+```
+
+#####break
+####Housing
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+thousing
+```
+
+#####break
+##Major, Military, Parents' education
+####MAJOR
+_Which of these fields best describes your major? (Select up to 2)_
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tmajor
+```
+
+#####break
+####MILITARY
+_Which best describes your military status: (select one)_
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tmilitary
+```
+
+####PAREDU
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tparedu
+```
+
+#####break
+##Paying for college & loans
+
+_How have you paid for your college costs?_
+
+####PAY_1
+*Resources from your family (e.g., parent or relative savings, etc.)*
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tpay_1
+```
+
+####PAY_2: 
+*Your own personal resources (e.g., your savings, income from a job, etc.)*
+
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tpay_2
+```
+
+####PAY_3:
+*Financial aid that does not need to be repaid (e.g., scholarship or grant money)*
+
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tpay_3
+```
+
+####PAY_4: 
+*Financial aid that does need to be repaid by you (student loans)*
+
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tpay_4
+```
+
+#####break
+####PAY_5:
+*Loans your parents are taking out (not student loans)*
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tpay_5
+```
+
+####PAY_6: 
+*Other*
+
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tpay_6
+```
+
+#####break
+####LOANS
+**NOTE:** **_This item was displayed to people who selected YES to PAY_4_**
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+cloans
+tloans
+```
+
+#####break
+##Program participation, RA
+####PROGRAMS
+_During the current academic year, have you attended or participated in any education or prevention programs that discuss the following topics at your school?_ 
+
+####PROGRAMS_1
+*Alcohol and other drugs*
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tprograms_1
+```
+
+####PROGRAMS_2: 
+*Sexual assault*
+
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tprograms_2
+```
+
+####PROGRAMS_3:
+*Nutrition*
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tprograms_3
+```
+
+#####break
+####PROGRAMS_4: 
+*Wellbeing*
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tprograms_4
+```
+
+####PROGRAMS_5:
+*Stress & emotional health *
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tprograms_5
+```
+
+####PROGRAMS_6: 
+*Diversity*
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tprograms_6
+```
+
+####PROGRAMS_7
+*Other*
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tprograms_7
+```
+
+#####break
+####RA
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tra
+```
+
+#####break
+##Race/ethnicity, Sexual orientation, Spirituality, Study abroad
+####Race/ethnicity (RACETHN)
+
+**NOTE:** **_The RACETHN variable was calculated from the ETHNICITY and RACE variables to reflect federal reporting requirements as of 2007._**
+
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+cracethn
+tracethn
+```
+
+####Sexual orientation (SEX_ORIENT)
+_How do you describe your sexual orientation? (select one)_
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+csexor
+tsexor
+```
+
+#####break
+####Spirituality (SPIRIT)
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tspirit
+```
+
+#####break
+####Study abroad (ABROAD)
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+cabroad
+tabroad
+```
+
+
+
+#####break
+##Work & money
+####WORK
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+cwork
+twork
+```
+
+####MONEY
+_What do you use that money for? (select all that apply)_
+```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+tmoney
+```
+
+<!-- #Additional Items -->
+<!-- <!-- <!-- <!--#Additional Items -->  --> -->
+<!-- ##Campus Safety -->
+<!-- **Prompt:** Please rate how strongly you agree or disagree with the following statements. -->
+
+<!-- ####Camp_Safe_Camp_Safe_1 -->
+<!-- ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE} -->
+<!-- csafe_1_noag -->
+<!-- tsafe_1_noag -->
+<!-- ``` -->
+
+<!-- ####Camp_Safe_Camp_Safe_2 -->
+<!-- ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE} -->
+<!-- csafe_2_noag -->
+<!-- tsafe_2_noag -->
+<!-- ``` -->
+
+<!-- ####Camp_Safe_Camp_Safe_3 -->
+<!-- ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE} -->
+<!-- csafe_3_noag -->
+<!-- tsafe_3_noag -->
+<!-- ``` -->
 
 
 <!-- ##Medical Care -->
 <!-- ####Med_Care_Med_Care_1 -->
 <!-- ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE} -->
-<!-- cmedcare_1_noag -->
+<!--  cmedcare_1_noag -->
 <!-- tmedcare_1_noag -->
 <!-- ``` -->
 
@@ -1451,30 +1725,30 @@ tsafe_3_noag
 <!-- ``` -->
 
 
-##Mental Health Care
-####Mental_Health_Mental_Health_1
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-cmentcare_1_noag
-tmentcare_1_noag
-```
+<!-- ##Mental Health Care -->
+<!-- ####Mental_Health_Mental_Health_1 -->
+<!-- ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE} -->
+<!-- cmentcare_1_noag -->
+<!-- tmentcare_1_noag -->
+<!-- ``` -->
 
-####Mental_Health_Mental_Health_2
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-cmentcare_2_noag
-tmentcare_2_noag
-```
+<!-- ####Mental_Health_Mental_Health_2 -->
+<!-- ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE} -->
+<!-- cmentcare_2_noag -->
+<!-- tmentcare_2_noag -->
+<!-- ``` -->
 
-####Mental_Health_Mental_Health_3
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-cmentcare_3_noag
-tmentcare_3_noag
-```
+<!-- ####Mental_Health_Mental_Health_3 -->
+<!-- ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE} -->
+<!-- cmentcare_3_noag -->
+<!-- tmentcare_3_noag -->
+<!-- ``` -->
 
-####Mental_Health_Mental_Health_4
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-cmentcare_4_noag
-tmentcare_4_noag
-```
+<!-- ####Mental_Health_Mental_Health_4 -->
+<!-- ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE} -->
+<!-- cmentcare_4_noag -->
+<!-- tmentcare_4_noag -->
+<!-- ``` -->
 
 
 <!-- ##Money -->
@@ -1497,25 +1771,25 @@ tmentcare_4_noag
 <!-- ``` -->
 
 
-#Custom Items
+<!-- #Custom Items -->
 
 <!--##CA_CotA - don't turn the school name title on in the reports-->
 <!-- ####CA_CotASp18_Custom_1 -->
 <!-- ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE} -->
-<!-- c_cca_1_noag -->
-<!-- t_cca_1_noag -->
+<!-- c_CCA_1_noag -->
+<!-- t_CCA_1_noag -->
 <!-- ``` -->
 
 <!-- ####CA_CotASp18_Custom_3 -->
 <!-- ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE} -->
-<!-- c_cca_2_noag -->
-<!-- t_cca_2_noag -->
+<!-- c_CCA_2_noag -->
+<!-- t_CCA_2_noag -->
 <!-- ``` -->
 
 <!-- ####CA_CotASp18_Custom_3 -->
 <!-- ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE} -->
-<!-- c_cca_3_noag -->
-<!-- t_cca_3_noag -->
+<!-- c_CCA_3_noag -->
+<!-- t_CCA_3_noag -->
 <!-- ``` -->
 
 
@@ -1539,7 +1813,7 @@ tmentcare_4_noag
 <!-- ``` -->
 
 
-<!--##Doane - don't turn the school name title on in the reports-->
+<!-- ##Doane - don't turn the school name title on in the reports -->
 <!-- ####DoaneSp18_Custom_1 -->
 <!-- ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE} -->
 <!-- c_doane_1_noag -->
@@ -1560,27 +1834,27 @@ tmentcare_4_noag
 
 
 
-<!--##Duke - don't turn the school name title on in the reports-->
-<!-- ####DukeSp18_Custom_1 -->
+<!-- ##Duke - don't turn the school name title on in the reports -->
+<!-- ####DukeSp18_Custom_1_29 -->
 <!-- ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE} -->
 <!-- c_duke_1_noag -->
 <!-- t_duke_1_noag -->
 <!-- ``` -->
 
-<!-- ####DukeSp18_Custom_2 -->
+<!-- ####DukeSp18_Custom_1_30 -->
 <!-- ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE} -->
 <!-- c_duke_2_noag -->
 <!-- t_duke_2_noag -->
 <!-- ``` -->
 
-<!-- ####DukeSp18_Custom_3 -->
+<!-- ####DukeSp18_Custom_1_31 -->
 <!-- ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE} -->
 <!-- c_duke_3_noag -->
 <!-- t_duke_3_noag -->
 <!-- ``` -->
 
 
-<!--##ECU - don't turn the school name title on in the reports-->
+<!-- ##ECU - don't turn the school name title on in the reports -->
 <!-- ####ECUSp18_Custom_1 -->
 <!-- ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE} -->
 <!-- c_ecu_1_noag -->
@@ -1589,8 +1863,8 @@ tmentcare_4_noag
 
 <!-- ####ECUSp18_Custom_2 -->
 <!-- ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE} -->
-<!-- cbelong_4 -->
-<!-- tbelong_4 -->
+<!-- c_ecu_2_noag -->
+<!-- t_ecu_2_noag -->
 <!-- ``` -->
 
 <!-- ####ECUSp18_Custom_3 -->
@@ -1621,26 +1895,26 @@ tmentcare_4_noag
 
 
 <!--##Juniata - don't turn the school name title on in the reports-->
-####JuniataSp18_Custom_1
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-c_juniata_1_noag
-t_juniata_1_noag
-```
+<!-- ####JuniataSp18_Custom_1 -->
+<!-- ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE} -->
+<!-- c_juniata_1_noag -->
+<!-- t_juniata_1_noag -->
+<!-- ``` -->
 
-####JuniataSp18_Custom_2
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-c_juniata_2_noag
-t_juniata_2_noag
-```
+<!-- ####JuniataSp18_Custom_2 -->
+<!-- ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE} -->
+<!-- c_juniata_2_noag -->
+<!-- t_juniata_2_noag -->
+<!-- ``` -->
 
-####JuniataSp18_Custom_3
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-c_juniata_3_noag
-t_juniata_3_noag
-```
+<!-- ####JuniataSp18_Custom_3 -->
+<!-- ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE} -->
+<!-- c_juniata_3_noag -->
+<!-- t_juniata_3_noag -->
+<!-- ``` -->
 
 
-<!--##Trinity - don't turn the school name title on in the reports-->
+<!-- ##Trinity - don't turn the school name title on in the reports -->
 <!-- ####TrinitySp18_Custom_1 -->
 <!-- ```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE} -->
 <!-- c_trinity_1_noag -->
@@ -1727,249 +2001,3 @@ t_juniata_3_noag
 <!-- c_wake_1_noag -->
 <!-- t_wake_1_noag -->
 <!-- ``` -->
-
-
-#Demographics and background
-
-##Age, Class
-####AGE
-
-* Mean (School) = `r meanage`
-* Mean (Aggregate) = `r meanage_ag`
-
-####CLASS
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-cclass
-tclass
-```
-
-##Disability
-_Do you have any of the following disabilities or medical conditions? (answer each item)_
-
-####DISABL_1
-*Learning disability (dyslexia, etc.)*
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tdisabl_1
-```
-
-####DISABL_2
-*Attention-deficit/hyperactivity disorder (ADHD)*
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tdisabl_2
-```
-
-####DISABL_3
-*Physical disability (speech, sight, mobility, hearing, etc.)*
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tdisabl_3
-```
-
-####DISABL_4
-*Chronic illness (cancer, diabetes, autoimmune disorders, etc.)*
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tdisabl_4
-```
-
-####DISABL_5
-*Psychological disorder (depression, etc.)*
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tdisabl_5
-```
-
-####DISABL_6
-*Other*
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tdisabl_6
-```
-
-##Foreign school, Gender, GPA, Housing
-
-####FRNSCHL
-
-_How many years of schooling before college have you received outside of the United States?_
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tfrn
-```
-
-####GENDER
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-cgender
-tgender
-```
-
-####GPA
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-chsgpa
-thsgpa
-```
-
-####Housing
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-thousing
-```
-
-##Major, Military, Parents' education
-####MAJOR
-_Which of these fields best describes your major? (Select up to 2)_
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tmajor
-```
-
-####MILITARY
-_Which best describes your military status: (select one)_
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tmilitary
-```
-
-####PAREDU
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tparedu
-```
-
-##Paying for college & loans
-
-_How have you paid for your college costs?_
-
-####PAY_1
-*Resources from your family (e.g., parent or relative savings, etc.)*
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tpay_1
-```
-
-####PAY_2: 
-*Your own personal resources (e.g., your savings, income from a job, etc.)*
-
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tpay_2
-```
-
-####PAY_3:
-*Financial aid that does not need to be repaid (e.g., scholarship or grant money)*
-
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tpay_3
-```
-
-####PAY_4: 
-*Financial aid that does need to be repaid by you (student loans)*
-
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tpay_4
-```
-
-####PAY_5:
-*Loans your parents are taking out (not student loans)*
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tpay_5
-```
-
-####PAY_6: 
-*Other*
-
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tpay_6
-```
-
-####LOANS
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-cloans
-tloans
-```
-
-##Program participation, RA
-####PROGRAMS
-_During the current academic year, have you attended or participated in any education or prevention programs that discuss the following topics at your school?_ 
-
-####PROGRAMS_1
-*Alcohol and other drugs*
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tprograms_1
-```
-
-####PROGRAMS_2: 
-*Sexual assault*
-
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tprograms_2
-```
-
-####PROGRAMS_3:
-*Nutrition*
-
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tprograms_3
-```
-
-####PROGRAMS_4: 
-*Wellbeing*
-
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tprograms_4
-```
-
-####PROGRAMS_5:
-*Stress & emotional health *
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tprograms_5
-```
-
-####PROGRAMS_6: 
-*Diversity*
-
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tprograms_6
-```
-
-####PROGRAMS_7
-*Other*
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tprograms_7
-```
-
-####RA
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tra
-```
-
-##Race/ethnicity, Sexual orientation, Spirituality, Study abroad
-
-####Race/ethnicity (RACETHN)
-
-**NOTE:** **_The RACETHN variable was calculated from the ETHNICITY and RACE variables to reflect federal reporting requirements as of 2007._**
-
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-cracethn
-tracethn
-```
-
-####Sexual orientation (SEX_ORIENT)
-_How do you describe your sexual orientation? (select one)_
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-csexor
-tsexor
-```
-
-####Spirituality (SPIRIT)
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tspirit
-```
-
-####Study abroad (ABROAD)
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-cabroad
-tabroad
-```
-
-
-##Work & money
-####WORK
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-cwork
-twork
-```
-
-####MONEY
-_What do you use that money for? (select all that apply)_
-```{r echo=FALSE, cache=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-tmoney
-```
