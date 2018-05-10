@@ -47,97 +47,97 @@ oneschool_complete <- df_survey_complete %>%
 #                                    scale_label = yn)
 # 
 # cmedcare_1_noag <- make_graph_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MED_CARE_MED_CARE_1",
-#                                    
+# 
 #                                    scale_label = yn, graph_label = "yn")
 # 
 # tmedcare_2_noag <- make_table_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MED_CARE_MED_CARE_2",
 #                                    scale_label = yn)
 # 
 # cmedcare_2_noag <- make_graph_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MED_CARE_MED_CARE_2",
-#                                    
+# 
 #                                    scale_label = yn, graph_label = "yn")
 # 
 # tmedcare_3_noag <- make_table_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MED_CARE_MED_CARE_3",
 #                                    scale_label = yn)
 # 
 # cmedcare_3_noag <- make_graph_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MED_CARE_MED_CARE_3",
-#                                    
+# 
 #                                    scale_label = yn, graph_label = "yn")
 
-#Mental health care additional items =================
-tmentcare_1_noag <- make_table_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MENTAL_HEALTH_MENTAL_HEALTH_1",
-                                    scale_label = yn)
-
-cmentcare_1_noag <- make_graph_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MENTAL_HEALTH_MENTAL_HEALTH_1",
-                                    
-                                    scale_label = yn, graph_label = "yn")
-
-tmentcare_2_noag <- make_table_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MENTAL_HEALTH_MENTAL_HEALTH_2",
-                                    scale_label = yn)
-
-cmentcare_2_noag <- make_graph_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MENTAL_HEALTH_MENTAL_HEALTH_2",
-                                    
-                                    scale_label = yn, graph_label = "yn")
-
-tmentcare_3_noag <- make_table_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MENTAL_HEALTH_MENTAL_HEALTH_3",
-                                    scale_label = yn)
-
-cmentcare_3_noag <- make_graph_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MENTAL_HEALTH_MENTAL_HEALTH_3",
-                                    
-                                    scale_label = yn, graph_label = "yn")
-
-tmentcare_4_noag <- make_table_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MENTAL_HEALTH_MENTAL_HEALTH_4",
-                                    scale_label = yn)
-
-cmentcare_4_noag <- make_graph_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MENTAL_HEALTH_MENTAL_HEALTH_4",
-                                    
-                                    scale_label = yn, graph_label = "yn")
+# # #Mental health care additional items =================
+# tmentcare_1_noag <- make_table_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MENTAL_HEALTH_MENTAL_HEALTH_1",
+#                                     scale_label = yn)
+# 
+# cmentcare_1_noag <- make_graph_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MENTAL_HEALTH_MENTAL_HEALTH_1",
+# 
+#                                     scale_label = yn, graph_label = "yn")
+# 
+# tmentcare_2_noag <- make_table_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MENTAL_HEALTH_MENTAL_HEALTH_2",
+#                                     scale_label = yn)
+# 
+# cmentcare_2_noag <- make_graph_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MENTAL_HEALTH_MENTAL_HEALTH_2",
+# 
+#                                     scale_label = yn, graph_label = "yn")
+# 
+# tmentcare_3_noag <- make_table_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MENTAL_HEALTH_MENTAL_HEALTH_3",
+#                                     scale_label = yn)
+# 
+# cmentcare_3_noag <- make_graph_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MENTAL_HEALTH_MENTAL_HEALTH_3",
+# 
+#                                     scale_label = yn, graph_label = "yn")
+# 
+# tmentcare_4_noag <- make_table_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MENTAL_HEALTH_MENTAL_HEALTH_4",
+#                                     scale_label = yn)
+# 
+# cmentcare_4_noag <- make_graph_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MENTAL_HEALTH_MENTAL_HEALTH_4",
+# 
+#                                     scale_label = yn, graph_label = "yn")
 
 
 #MONEY_MONEY additional items ===========================
-# tmoney_add_1_noag <- make_table_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "Money_Money_1",
-#                                      scale_label = frequency)
+# tmoney_add_1_noag <- make_table_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MONEY_MONEY_1",
+#                                      scale_label = often)
 # 
-# cmoney_add_1_noag <- make_graph_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "Money_Money_1",
-#                                      
-#                                      scale_label = frequency, graph_label = "frequency")
+# cmoney_add_1_noag <- make_graph_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MONEY_MONEY_1",
 # 
-# tmoney_add_2_noag <- make_table_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "Money_Money_2",
-#                                      scale_label = frequency)
+#                                      scale_label = often, graph_label = "often")
 # 
-# cmoney_add_2_noag <- make_graph_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "Money_Money_2",
-#                                      
-#                                      scale_label = frequency, graph_label = "frequency")
+#  tmoney_add_2_noag <- make_table_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MONEY_MONEY_2",
+#                                      scale_label = often)
 # 
-# tmoney_add_3_noag <- make_table_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "Money_Money_3",
-#                                      scale_label = frequency)
+# cmoney_add_2_noag <- make_graph_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MONEY_MONEY_2",
 # 
-# cmoney_add_3_noag <- make_graph_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "Money_Money_3",
-#                                      
-#                                      scale_label = frequency, graph_label = "frequency")
+#                                      scale_label = often, graph_label = "often")
 # 
-
+# tmoney_add_3_noag <- make_table_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MONEY_MONEY_3",
+#                                      scale_label = often)
+# 
+# cmoney_add_3_noag <- make_graph_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "MONEY_MONEY_3",
+# 
+#                                     scale_label = often, graph_label = "often")
+# 
+# 
 #Campus safety additional items =================
-tsafe_1_noag <- make_table_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "CAMP_SAFE_CAMP_SAFE_1",
-                                scale_label = agreement)
-
-csafe_1_noag <- make_graph_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "CAMP_SAFE_CAMP_SAFE_1",
-                                
-                                scale_label = agreement, graph_label = "agreement")
-
-tsafe_2_noag <- make_table_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "CAMP_SAFE_CAMP_SAFE_2",
-                                scale_label = agreement)
-
-csafe_2_noag <- make_graph_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "CAMP_SAFE_CAMP_SAFE_2",
-                                
-                                scale_label = agreement, graph_label = "agreement")
-
-tsafe_3_noag <- make_table_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "CAMP_SAFE_CAMP_SAFE_3",
-                                scale_label = agreement)
-
-csafe_3_noag <- make_graph_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "CAMP_SAFE_CAMP_SAFE_3",
-                                
-                                scale_label = agreement, graph_label = "agreement")
+# tsafe_1_noag <- make_table_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "CAMP_SAFE_CAMP_SAFE_1",
+#                                 scale_label = agreement)
+# 
+# csafe_1_noag <- make_graph_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "CAMP_SAFE_CAMP_SAFE_1",
+# 
+#                                 scale_label = agreement, graph_label = "agreement")
+# 
+# tsafe_2_noag <- make_table_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "CAMP_SAFE_CAMP_SAFE_2",
+#                                 scale_label = agreement)
+# 
+# csafe_2_noag <- make_graph_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "CAMP_SAFE_CAMP_SAFE_2",
+# 
+#                                 scale_label = agreement, graph_label = "agreement")
+# 
+# tsafe_3_noag <- make_table_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "CAMP_SAFE_CAMP_SAFE_3",
+#                                 scale_label = agreement)
+# 
+# csafe_3_noag <- make_graph_noag(data =df_survey_complete, school_name = school_of_interest, question_name = "CAMP_SAFE_CAMP_SAFE_3",
+# 
+#                                 scale_label = agreement, graph_label = "agreement")
 
 #################################################################
 
@@ -145,70 +145,70 @@ csafe_3_noag <- make_graph_noag(data =df_survey_complete, school_name = school_o
 #Comment out and fold other schools' items. Unfold and un-comment 
 #target school's items.
 # Duke's items ============================================================
-# t_duke_1_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "DukeSp18_Custom_1",
+# t_duke_1_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "DukeSp18_Custom_1_29",
 #                       scale_label = dukeagree)
 # 
-# c_duke__noag1 <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "DukeSp18_Custom_1",
-#                       
+# c_duke_1_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "DukeSp18_Custom_1_29",
+# 
 #                       scale_label = dukeagree, graph_label = "dukeagree")
-#
-# t_duke_2_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "DukeSp18_Custom_2",
+# 
+# t_duke_2_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "DukeSp18_Custom_1_30",
 #                       scale_label = dukeagree)
 # 
-# c_duke_2_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "DukeSp18_Custom_2",
-#                       
+# c_duke_2_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "DukeSp18_Custom_1_30",
+# 
 #                       scale_label = dukeagree, graph_label = "dukeagree")
-#
-# t_duke_3_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "DukeSp18_Custom_3",
+# 
+# t_duke_3_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "DukeSp18_Custom_1_31",
 #                       scale_label = dukeagree)
 # 
-# c_duke_3_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "DukeSp18_Custom_3",
-#                       
+# c_duke_3_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "DukeSp18_Custom_1_31",
+# 
 #                       scale_label = dukeagree, graph_label = "dukeagree")
-#
+
 # CCA's items ============================================================
 # t_CCA_1_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "CA_CotASp18_Custom_1",
 #                       scale_label = yn)
 # 
 # c_CCA_1_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "CA_CotASp18_Custom_1",
-#                       
+# 
 #                       scale_label = yn, graph_label = "yn")
 # 
 # t_CCA_2_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "CA_CotASp18_Custom_2",
 #                     scale_label = often)
 # 
 # c_CCA_2_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "CA_CotASp18_Custom_2",
-#                     
+# 
 #                     scale_label = often, graph_label = "often")
 # 
 # t_CCA_3_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "CA_CotASp18_Custom_3",
 #                     scale_label = agreementNA)
 # 
 # c_CCA_3_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "CA_CotASp18_Custom_3",
-#                     
+# 
 #                     scale_label = agreementNA, graph_label = "agreementNA")
-
+# 
 
 # Chatham's items =========================================================
 # t_chatham_1_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "ChathamSp18_Custom_1",
 #                       scale_label = yn)
 # 
 # c_chatham_1_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "ChathamSp18_Custom_1",
-#                       
+# 
 #                       scale_label = yn, graph_label = "yn")
-#
+# 
 # t_chatham_2_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "ChathamSp18_Custom_2",
 #                       scale_label = yn)
 # 
 # c_chatham_2_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "ChathamSp18_Custom_2",
-#                       
+# 
 #                       scale_label = yn, graph_label = "yn")
-#
+# 
 # t_chatham_3_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "ChathamSp18_Custom_3",
 #                       scale_label = yn)
 # 
 # c_chatham_3_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "ChathamSp18_Custom_3",
-#                       
+# 
 #                       scale_label = yn, graph_label = "yn")
 
 # Doane's items ===========================================================
@@ -216,195 +216,195 @@ csafe_3_noag <- make_graph_noag(data =df_survey_complete, school_name = school_o
 #                       scale_label = yn)
 # 
 # c_doane_1_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "DoaneSp18_Custom_1",
-#                       
+# 
 #                       scale_label = yn, graph_label = "yn")
-#
+# 
 # t_doane_2_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "DoaneSp18_Custom_2",
 #                       scale_label = agreementNA)
 # 
 # c_doane_2_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "DoaneSp18_Custom_2",
-#                       
+# 
 #                       scale_label = agreementNA, graph_label = "agreementNA")
-#
+# 
 # t_doane_3_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "DoaneSp18_Custom_3",
 #                       scale_label = yn)
 # 
 # c_doane_3_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "DoaneSp18_Custom_3",
-#                       
+# 
 #                       scale_label = yn, graph_label = "yn")
-#
+
 
 # ECU's items =============================================================
 # t_ecu_1_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "ECUSp18_Custom_1",
 #                       scale_label = yn)
 # 
 # c_ecu_1_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "ECUSp18_Custom_1",
-#                       
+# 
 #                       scale_label = yn, graph_label = "yn")
-#
+# 
 # t_ecu_2_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "ECUSp18_Custom_2",
 #                       scale_label = often)
 # 
 # c_ecu_2_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "ECUSp18_Custom_2",
-#                       
+# 
 #                       scale_label = often, graph_label = "often")
-#
+# 
 # t_ecu_3_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "ECUSp18_Custom_3",
 #                       scale_label = helpful)
 # 
 # c_ecu_3_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "ECUSp18_Custom_3",
-#                       
+# 
 #                       scale_label = helpful, graph_label = "helpful")
-#
+
 
 # GA Tech's items =========================================================
 # t_gt_1_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "GTSp18_Custom_1",
 #                       scale_label = yn)
 # 
 # c_gt_1_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "GTSp18_Custom_1",
-#                       
+# 
 #                       scale_label = yn, graph_label = "yn")
-#
+# 
 # t_gt_2_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "GTSp18_Custom_2",
 #                       scale_label = yn)
 # 
 # c_gt_2_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "GTSp18_Custom_2",
-#                       
+# 
 #                       scale_label = yn, graph_label = "yn")
-#
+# 
 # t_gt_3_noag <- make_table(data =oneschool_complete, school_name = school_of_interest, question_name = "GTSp18_Custom_3",
 #                       scale_label = yn)
 # 
 # c_gt_3_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "GTSp18_Custom_3",
-#                       
+# 
 #                       scale_label = yn, graph_label = "yn")
-#
-
+# 
+# 
 
 # Juniata's items =========================================================
-t_juniata_1_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "JuniataSp18_Custom_1",
-                                   scale_label = yn)
-
-c_juniata_1_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "JuniataSp18_Custom_1",
-                               
-                               scale_label = yn, graph_label = "yn")
-
-
-
-t_juniata_2_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "JuniataSp18_Custom_2",
-                         scale_label = agreementNA)
-
-c_juniata_2_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "JuniataSp18_Custom_2",
-                         
-                         scale_label = agreementNA, graph_label = "agreementNA")
-
-t_juniata_3_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "JuniataSp18_Custom_3",
-                         scale_label = yn)
-
-c_juniata_3_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "JuniataSp18_Custom_3",
-                         
-                         scale_label = yn, graph_label = "yn")
+# t_juniata_1_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "JuniataSp18_Custom_1",
+#                                    scale_label = yn)
+# 
+# c_juniata_1_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "JuniataSp18_Custom_1",
+# 
+#                                scale_label = yn, graph_label = "yn")
+# 
+# 
+# 
+# t_juniata_2_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "JuniataSp18_Custom_2",
+#                          scale_label = agreementNA)
+# 
+# c_juniata_2_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "JuniataSp18_Custom_2",
+# 
+#                          scale_label = agreementNA, graph_label = "agreementNA")
+# 
+# t_juniata_3_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "JuniataSp18_Custom_3",
+#                          scale_label = yn)
+# 
+# c_juniata_3_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "JuniataSp18_Custom_3",
+# 
+#                          scale_label = yn, graph_label = "yn")
 
 # Trinity's items =========================================================
 # t_trinity_1_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "TrinitySp18_Custom_1",
 #                       scale_label = yn)
 # 
 # c_trinity_1_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "TrinitySp18_Custom_1",
-#                       
+# 
 #                       scale_label = yn, graph_label = "yn")
-#
+# 
 # t_trinity_2_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "TrinitySp18_Custom_2",
 #                       scale_label = often)
 # 
 # c_trinity_2_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "TrinitySp18_Custom_2",
-#                       
+# 
 #                       scale_label = often, graph_label = "often")
-#
-# t_trinity_3_noag <- make_tablenoag(data =oneschool_complete, school_name = school_of_interest, question_name = "TrinitySp18_Custom_3",
+# 
+# t_trinity_3_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "TrinitySp18_Custom_3",
 #                       scale_label = agreementNA)
 # 
 # c_trinity_3_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "TrinitySp18_Custom_3",
-#                       
+# 
 #                       scale_label = agreementNA, graph_label = "agreementNA")
-#
+
 
 # U of Richmond's items ===================================================
 # t_ur_1_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "URSp18_Custom_1",
 #                       scale_label = yn)
 # 
 # c_ur_1_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "URSp18_Custom_1",
-#                       
+# 
 #                       scale_label = yn, graph_label = "yn")
-#
+# 
 # t_ur_2_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "URSp18_Custom_2",
 #                       scale_label = often)
 # 
 # c_ur_2_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "URSp18_Custom_2",
-#                       
+# 
 #                       scale_label = often, graph_label = "often")
-#
+# 
 # t_ur_3_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "URSp18_Custom_3",
 #                       scale_label = yn)
 # 
 # c_ur_3_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "URSp18_Custom_3",
-#                       
+# 
 #                       scale_label = yn, graph_label = "yn")
-#
+
 
 # UNC Chapel Hill's items =================================================
 # t_unc_1_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "UNCSp18_Custom_1",
 #                       scale_label = yn)
 # 
 # c_unc_1_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "UNCSp18_Custom_1",
-#                       
+# 
 #                       scale_label = yn, graph_label = "yn")
-#
-# t_unc_2_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "UNCSp18_Custom_1",
+# 
+# t_unc_2_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "UNCSp18_Custom_2",
 #                       scale_label = often)
 # 
-# c_unc_2_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "UNCSp18_Custom_1",
-#                       
+# c_unc_2_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "UNCSp18_Custom_2",
+# 
 #                       scale_label = often, graph_label = "often")
-#
-# t_unc_3_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "UNCSp18_Custom_1",
+# 
+# t_unc_3_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "UNCSp18_Custom_3",
 #                       scale_label = agreementNA)
 # 
-# c_unc_3_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "UNCSp18_Custom_1",
-#                       
+# c_unc_3_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "UNCSp18_Custom_3",
+# 
 #                       scale_label = agreementNA, graph_label = "agreementNA")
-#
+# 
 
 # UNC Pembroke's items ====================================================
 # t_pembroke_1_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "UNCPSp18_Custom_1",
 #                       scale_label = often)
 # 
 # c_pembroke_1_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "UNCPSp18_Custom_1",
-#                       
+# 
 #                       scale_label = often, graph_label = "often")
-#
+# 
 # t_pembroke_2_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "UNCPSp18_Custom_2",
 #                       scale_label = often)
 # 
 # c_pembroke_2_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "UNCPSp18_Custom_2",
-#                       
+# 
 #                       scale_label = often, graph_label = "often")
-#
+# 
 # t_pembroke_3_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "UNCPSp18_Custom_3",
 #                       scale_label = often)
 # 
 # c_pembroke_3_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "UNCPSp18_Custom_3",
-#                       
+# 
 #                       scale_label = often, graph_label = "often")
-#
+
 
 # Wake's items ============================================================
 # t_wake_1_noag <- make_table_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "WFUSp18_Custom_1",
 #                       scale_label = yn)
 # 
 # c_wake_1_noag <- make_graph_noag(data =oneschool_complete, school_name = school_of_interest, question_name = "WFUSp18_Custom_1",
-#                       
+# 
 #                       scale_label = yn, graph_label = "yn")
-#
+
 
 
 
@@ -457,7 +457,7 @@ meanage_df_ag <- select_age_ag %>%
   mutate(response = as.integer(response)) %>% 
   mutate(age_freq = (response * freq))
   
-meanage_ag <- round((sum(meanage_df_ag$age_freq)/sum(meanage_df_ag$freq)), digits = 2)
+meanage_ag <- round((sum(meanage_df_ag$age_freq, na.rm=TRUE)/sum(meanage_df_ag$freq, na.rm=TRUE)), digits = 2)
 
 #Identify number of missing cases on age for aggregate.
 meanage_missing_df_ag <- select_age_ag %>% 
@@ -538,7 +538,7 @@ agsenvalid <- round(senschool$perc_ag_no_na, digits = 2)
 tabroad <- make_table(data =df_survey_complete, school_name = school_of_interest, question_name = "ABROAD",
                         scale_label = ynplan)
 
-cabroad <- make_graph(data =df_survey_complete, school_name = school_of_interest, question_name = "ABROAD",
+cabroad <- make_graph_tall(data =df_survey_complete, school_name = school_of_interest, question_name = "ABROAD",
                       
                       scale_label = ynplan, graph_label = "ynplan")
 
@@ -911,7 +911,7 @@ cbelong_13 <- make_graph(data =df_survey_complete, school_name = school_of_inter
 
 
 #CLASS============
-
+#The code did not work properly for this item for some unknown reason, so we had to manually create this chart
 tclass <- make_table(data =df_survey_complete, school_name = school_of_interest, question_name = "CLASS",
                      scale_label = class)
 
@@ -928,9 +928,9 @@ cclass <- ggplot(data = subset(cclass_test_df, !is.na(response)),
   theme_wellbeing()+
   theme(panel.grid.major.x = element_blank(), panel.grid.minor.x = element_blank())+
   scale_fill_wellness()+
-  ggtitle(paste0(my_title))+
+  ggtitle("What class are you in?")+
   scale_x_discrete(labels = c("FY/Freshman", "Sophomore", "Junior", "Senior"))+
-  geom_point(aes(response, perc_ag_no_na), shape =95, size = 10)+ylim(0,72)+ylab("")+xlab("")
+  geom_point(aes(response, perc_ag_no_na), shape =95, size = 10)+ylab("")+xlab("")
 
 
 #DEPRESSION==============
@@ -1124,7 +1124,7 @@ tfrn <- oneschool_complete %>%
 tgender <- make_table(data =df_survey_complete, school_name = school_of_interest, question_name = "GENDER",
                          scale_label = gender)
 
-cgender <- make_graph(data =df_survey_complete, school_name = school_of_interest, question_name = "GENDER",
+cgender <- make_graph_tall(data =df_survey_complete, school_name = school_of_interest, question_name = "GENDER",
                          
                          scale_label = gender, graph_label = "gender")
 #HAPPY============================
@@ -1620,7 +1620,7 @@ copt_3 <- make_graph(data =df_survey_complete, school_name = school_of_interest,
 toutcomes_1 <- make_table(data =df_survey_complete, school_name = school_of_interest, question_name = "Outcomes_Outcomes_1",
                      scale_label = likely)
 
-coutcomes_1 <- make_graph(data =df_survey_complete, school_name = school_of_interest, question_name = "Outcomes_Outcomes_1",
+coutcomes_1 <- make_graph_tall(data =df_survey_complete, school_name = school_of_interest, question_name = "Outcomes_Outcomes_1",
                      
                      scale_label = likely, graph_label = "likely")
 
@@ -1958,7 +1958,7 @@ croman3_4 <- make_graph(data =df_survey_complete, school_name = school_of_intere
 troman3_5 <- make_table(data =df_survey_complete, school_name = school_of_interest, question_name = "ROMAN3_ROMAN3_5",
                         scale_label = agreement)
 
-croman3_5 <- make_graph(data =df_survey_complete, school_name = school_of_interest, question_name = "ROMAN3_ROMAN3_5",
+croman3_5 <- make_graph_tall(data =df_survey_complete, school_name = school_of_interest, question_name = "ROMAN3_ROMAN3_5",
                         
                         scale_label = agreement, graph_label = "agreement")
 
@@ -1998,10 +1998,10 @@ cselfest_3 <- make_graph(data =df_survey_complete, school_name = school_of_inter
                          
                          scale_label = agreement, graph_label = "agreement")
 
-tselfest_4 <- make_table(data =df_survey_complete, school_name = school_of_interest, question_name = "Att_SELFEST_3",
+tselfest_4 <- make_table(data =df_survey_complete, school_name = school_of_interest, question_name = "Att_SELFEST_4",
                          scale_label = agreement)
 
-cselfest_4 <- make_graph(data =df_survey_complete, school_name = school_of_interest, question_name = "Att_SELFEST_3",
+cselfest_4 <- make_graph(data =df_survey_complete, school_name = school_of_interest, question_name = "Att_SELFEST_4",
                          
                          scale_label = agreement, graph_label = "agreement")
 
@@ -2010,7 +2010,7 @@ cselfest_4 <- make_graph(data =df_survey_complete, school_name = school_of_inter
 tsexor <- make_table(data =df_survey_complete, school_name = school_of_interest, question_name = "SEX_ORIENT",
                          scale_label = sexor)
 
-csexor <- make_graph(data =df_survey_complete, school_name = school_of_interest, question_name = "SEX_ORIENT",
+csexor <- make_graph_tall(data =df_survey_complete, school_name = school_of_interest, question_name = "SEX_ORIENT",
                          
                          scale_label = sexor, graph_label = "sexor")
 
@@ -2040,9 +2040,9 @@ csocanx_3 <- make_graph(data =df_survey_complete, school_name = school_of_intere
 tspirit <- make_table(data =df_survey_complete, school_name = school_of_interest, question_name = "SPIRIT",
                      scale_label = spirituality)
 
-cspirit <- make_graph(data =df_survey_complete, school_name = school_of_interest, question_name = "SPIRIT",
+#cspirit <- make_graph(data =df_survey_complete, school_name = school_of_interest, question_name = "SPIRIT",
                      
-                     scale_label = spirituality, graph_label = "spirituality")
+                     #scale_label = spirituality, graph_label = "spirituality")
 
 
 #Substance ===============================
@@ -2088,10 +2088,10 @@ csubst2_3 <- make_graph(data =df_survey_complete, school_name = school_of_intere
                         
                         scale_label = agreementNA, graph_label = "agreementNA")
 
-tsubst2_4 <- make_table(data =df_survey_complete, school_name = school_of_interest, question_name = "SUBST2_SUBST_3",
+tsubst2_4 <- make_table(data =df_survey_complete, school_name = school_of_interest, question_name = "SUBST2_SUBST_4",
                         scale_label = agreementNA)
 
-csubst2_4 <- make_graph(data =df_survey_complete, school_name = school_of_interest, question_name = "SUBST2_SUBST_3",
+csubst2_4 <- make_graph(data =df_survey_complete, school_name = school_of_interest, question_name = "SUBST2_SUBST_4",
                         
                         scale_label = agreementNA, graph_label = "agreementNA")
 
@@ -2106,7 +2106,7 @@ csubst3_1 <- make_graph(data =df_survey_complete, school_name = school_of_intere
 tsubst3_2 <- make_table(data =df_survey_complete, school_name = school_of_interest, question_name = "SUBST3_2",
                         scale_label = substance)
 
-csubst3_2 <- make_graph(data =df_survey_complete, school_name = school_of_interest, question_name = "SUBST3_2",
+csubst3_2 <- make_graph_tall(data =df_survey_complete, school_name = school_of_interest, question_name = "SUBST3_2",
                         
                         scale_label = substance, graph_label = "substance")
 
@@ -2181,7 +2181,7 @@ cvolunt_8 <- make_graph(data =df_survey_complete, school_name = school_of_intere
 twork <- make_table(data =df_survey_complete, school_name = school_of_interest, question_name = "WORK",
                         scale_label = work)
 
-cwork <- make_graph(data =df_survey_complete, school_name = school_of_interest, question_name = "WORK",
+cwork <- make_graph_tall(data =df_survey_complete, school_name = school_of_interest, question_name = "WORK",
                         
                         scale_label = work, graph_label = "work")
 
