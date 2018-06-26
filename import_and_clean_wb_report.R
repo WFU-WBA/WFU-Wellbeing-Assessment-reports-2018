@@ -64,7 +64,7 @@ for (i in 1:nrow(survey_of_interest)){
   #our creation of dummy variables.
   mysurvey <- mysurvey %>% 
     mutate(ethnicity = ifelse(is.na(ETHNICITY), 0, 
-                              ifelse(ETHNICITY == "Yes", 1, 0))) %>%
+                              ifelse(ETHNICITY == 1, 1, 0))) %>%
     mutate(race1 = ifelse(is.na(RACE_1), 0, 1)) %>%
     mutate(race2 = ifelse(is.na(RACE_2), 0, 1)) %>%
     mutate(race3 = ifelse(is.na(RACE_3), 0, 1)) %>%
